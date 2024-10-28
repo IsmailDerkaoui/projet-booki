@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booki</title>
+    <link href="projet-booki/style.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
@@ -13,10 +14,35 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
-
 <body>
     <div class="main-container">
-        <header></header>
+        <header class="header">
+            <img src="images/logo/Booki.png" alt="logo Booki" class="logo-header">
+        <div class="lien-header">
+            <a href="#" class="hebergements">Hébergements</a>
+            <a href="#" class="activites">Activités</a>
+        </div>
+        </header>
+        <h3 class="titre-logo">Trouvez votre hébergement pour des vacances de rêve</h3>
+        <p class="centre-ville">En plein centre ville où en pleine nature</p>
+    <div class="recherche">
+        <div class="logo-recherche">
+            <i class="fa-solid fa-location-dot"></i>
+        </div>
+       <input type="text" name="Marseille, France" id="marseille" value="Marseille, France">
+       <input type="submit" value="Rechercher">
+    </div>
+    <div>
+        <h4>Filtres</h4>
+        <button type="button">Economiques</button>
+        <button type="button">Familial</button>
+        <button type="button">Romantique</button>
+        <button type="button">Nos pépites</button>
+    </div>
+    <div>
+        <i class="fa fa-info-circle" aria-hidden="true"></i>
+        <p>Plus de 500 logements sont disponibles dans cette ville</p>
+    </div>
         <main>
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
