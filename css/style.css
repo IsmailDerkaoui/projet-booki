@@ -156,7 +156,6 @@ a {
 }
 
 .logo-header {
-    height: 19px;
     width: 61.09px;
     display: flex;
     justify-content: left;
@@ -168,11 +167,10 @@ a {
 }
 
 .lien-header {
-    width: 244px;
-    display: flex; 
+    display: flex;
     gap: 68px;
-    justify-content: space-around; 
-    align-items: center; 
+    justify-content: space-around;
+    align-items: center;
 }
 
 .hebergements {
@@ -192,10 +190,6 @@ a {
 }
 
 .link {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    height: 100%;
     border-top: transparent solid 2px;
 }
 
@@ -203,7 +197,7 @@ a {
     border-top : blue solid 2px ;
     color : #0065FC;
     display : flex;
-    justify-content: space-around;
+    justify-content: flex-start;
 }
 
 .header {
@@ -237,8 +231,8 @@ a {
 }
 
 .button-marseille::placeholder {
-    color: #000000; 
-    opacity: 1; 
+    color: #000000;
+    opacity: 1;
 }
 
 .button-marseille {
@@ -289,6 +283,7 @@ a {
 
 .filtres-media {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 25px;
 }
@@ -304,11 +299,16 @@ a {
     font-size: 18px;
 }
 
+.filter-button {
+    cursor: pointer;
+}
+
 .economique {
     width: 193px;
     height: 50px;
     border-radius: 25px;
     padding: 4px 19px 4px 19px;
+    cursor: pointer;
 }
 
 .familial {
@@ -316,20 +316,21 @@ a {
     height: 50px;
     border-radius: 25px;
     padding: 4px 19px 4px 19px;
+    cursor: pointer;
 }
 
 .romantique {
-    width: 170px;
     height: 50px;
     border-radius: 25px;
     padding: 4px 19px 4px 19px;
+    cursor: pointer;
 }
 
 .pepites {
-    width: 167px;
     height: 50px;
     border-radius: 25px;
     padding: 4px 19px 4px 19px;
+    cursor: pointer;
 }
 
 .economique:hover {
@@ -367,7 +368,6 @@ a {
 }
 
 .rom {
-    width: 100px;
     font-weight: 700;
     font-size: 17px;
     display: flex;
@@ -376,7 +376,6 @@ a {
 }
 
 .pep {
-    width: 97px;
     font-weight: 700;
     font-size: 17px;
     display: flex;
@@ -398,7 +397,6 @@ a {
 }
 
 .logement {
-    width: 1340px;
     height: 24px;
     display: flex;
     align-items: center;
@@ -437,6 +435,7 @@ a {
 
 .hebergement-populaire {
     display: flex;
+    flex-wrap: wrap;
     gap: 40px;
 }
 
@@ -445,11 +444,13 @@ a {
     border-radius: 15px;
     background-color: #F2F2F2;
     padding: 30px;
+    max-width: 900px;
 }
 
 .card-desktop {
     gap: 30px;
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     margin-bottom: 40px;
@@ -461,7 +462,6 @@ a {
 }
 
 .aside-info {
-    width: 429px;
     background-color: #f2f2f2;
     padding: 30px;
     border-radius: 15px;
@@ -490,7 +490,6 @@ a {
 
 .card-content {
     width: 250.33px;
-    height: 64.25px;
     border-radius: 20px;
     background-color: #ffffff;
 }
@@ -501,6 +500,10 @@ a {
 }
 
 .card-rating {
+    width: 81px;
+    padding-left: 15px;
+    display: flex;
+    align-items: flex-start;
     margin-top: 5px;
 }
 
@@ -515,7 +518,6 @@ a {
 
 .card-txt {
     width: 268px;
-    height: 64.25px;
     padding-left: 15px;
 }
 
@@ -611,7 +613,6 @@ a {
 }
 
 .populaires-aside {
-    width: 300.31px;
     margin: 0px;
 }
 
@@ -680,17 +681,14 @@ a {
     margin-top: 0px;
 }
 
-.card-rating {
-    width: 81px;
-    height: 13.25px;
-    padding-left: 15px;
-    display: flex;
-    align-items: flex-start;
-    margin-top: 5px;
-}
-
 .activite-marseille-titre {
     padding-bottom: 50px;
+}
+
+.activite {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
 }
 
 
@@ -699,7 +697,6 @@ a {
 @media (max-width: 767.98px) {
 
     .body {
-        height: 4058px;
         width: 100%;
         top: 188px;
     }
@@ -753,9 +750,6 @@ a {
 
     .hebergement-recherche {
         width: 100%;
-
-        padding-left: 20px;
-        padding-right: 20px;
         gap: 35px;
     }
 
@@ -847,7 +841,7 @@ a {
         width: 100%;
         height: 161px;
         gap: 20px;
-        display: grid;
+        display: flex;
         align-items: flex-start;
         grid-template-columns: repeat(2, 1fr);
         margin-bottom: 15px;
@@ -860,17 +854,11 @@ a {
     }
 
     .aside-info {
-        width: 100%;
         height: 569px;
-        padding: 30px 20px 30px 20px;
         gap: 0px;
-        display: grid;
+        display: flex;
         flex-direction: column;
         background-color: #F2F2F2;
-    }
-
-    .full-carte-aside {
-        width: 100%;
     }
 
     .carte-blanche-aside {
@@ -919,7 +907,6 @@ a {
     }
 
     .full-hebergement-carre {
-        width: 100%;
         height: auto;
         padding-left: 0px;
         gap: 15px;
@@ -933,7 +920,6 @@ a {
     }
 
     .card-desktop {
-        width: 100%;
         padding: 20px;
         gap: 15px;
         display: grid;
@@ -979,7 +965,6 @@ a {
         display: flex;
         flex-direction: column;
         width: 100%;
-        height: 569px;
         padding-top: 30px;
         padding-right: 20px;
         padding-bottom: 30px;
@@ -1002,12 +987,15 @@ a {
         height: 60px;
         gap: 5px;
     }
+
     .populaires-cards a {
         width: 30%;
     }
+
     .populaires-cards .card-title {
         font-size: 14px;
     }
+
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
